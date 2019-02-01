@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>پنل مدیریت | خواندن ایمیل</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- bootstrap rtl -->
+  <link rel="stylesheet" href="../../dist/css/bootstrap-rtl.min.css">
+  <!-- template rtl version -->
+  <link rel="stylesheet" href="../../dist/css/custom-style.css">
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index3.html" class="nav-link">خانه</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">تماس</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="جستجو" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav mr-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-comments-o"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 ml-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  محمدرضا عطوان
+                  <span class="float-left text-sm text-danger"><i class="fa fa-star"></i></span>
+                </h3>
+                <p class="text-sm">با من تماس بگیر لطفا...</p>
+                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 ساعت قبل</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  پیمان احمدی
+                  <span class="float-left text-sm text-muted"><i class="fa fa-star"></i></span>
+                </h3>
+                <p class="text-sm">من پیامتو دریافت کردم</p>
+                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 ساعت قبل</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  سارا وکیلی
+                  <span class="float-left text-sm text-warning"><i class="fa fa-star"></i></span>
+                </h3>
+                <p class="text-sm">پروژه اتون عالی بود مرسی واقعا</p>
+                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i>4 ساعت قبل</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">مشاهده همه پیام‌ها</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-bell-o"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+          <span class="dropdown-item dropdown-header">15 نوتیفیکیشن</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fa fa-envelope ml-2"></i> 4 پیام جدید
+            <span class="float-left text-muted text-sm">3 دقیقه</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fa fa-users ml-2"></i> 8 درخواست دوستی
+            <span class="float-left text-muted text-sm">12 ساعت</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fa fa-file ml-2"></i> 3 گزارش جدید
+            <span class="float-left text-muted text-sm">2 روز</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">مشاهده همه نوتیفیکیشن</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+                class="fa fa-th-large"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index3.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">پنل مدیریت</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div>
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="https://secure.gravatar.com/avatar/5ffa2a1ffeb767c60ab7e1052e385d5c?s=52&d=mm&r=g" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">محمدرضا عطوان</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-dashboard"></i>
+                <p>
+                  داشبوردها
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../../index.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>داشبورد اول</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index2.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>داشبورد دوم</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../index3.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>داشبورد سوم</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../widgets.html" class="nav-link">
+                <i class="nav-icon fa fa-th"></i>
+                <p>
+                  ویجت‌ها
+                  <span class="right badge badge-danger">جدید</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview ">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-pie-chart"></i>
+                <p>
+                  چارت‌ها
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../charts/chartjs.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>نمودار ChartJS</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/flot.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>نمودار Flot</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../charts/inline.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>نمودار Inline</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-tree"></i>
+                <p>
+                  اشیای گرافیکی
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../UI/general.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>عمومی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../UI/icons.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>آیکون‌ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../UI/buttons.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>دکمه‌ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../UI/sliders.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>اسلایدر‌ها</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  فرم‌ها
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../forms/general.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>اجزا عمومی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/advanced.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>پیشرفته</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/editors.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>ویشرایشگر</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-table"></i>
+                <p>
+                  جداول
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../tables/simple.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>جداول ساده</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>جداول داده</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">مثال‌ها</li>
+            <li class="nav-item">
+              <a href="../calendar.html" class="nav-link">
+                <i class="nav-icon fa fa-calendar"></i>
+                <p>
+                  تقویم
+                  <span class="badge badge-info right">2</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fa fa-envelope-o"></i>
+                <p>
+                  ایمیل‌ باکس
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../mailbox/mailbox.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>اینباکس</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../mailbox/compose.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>ایجاد</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../mailbox/read-mail.html" class="nav-link active">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>خواندن</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-book"></i>
+                <p>
+                  صفحات
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../examples/invoice.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>سفارشات</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/profile.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>پروفایل</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/login.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>صفحه ورود</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/register.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>صفحه عضویت</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/lockscreen.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>قفل صفحه</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-plus-square-o"></i>
+                <p>
+                  بیشتر
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../examples/404.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>ارور 404</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/500.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>ارور 500</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../examples/blank.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>صفحه خالی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../../starter.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>صفحه شروع</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">متفاوت</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-file"></i>
+                <p>مستندات</p>
+              </a>
+            </li>
+            <li class="nav-header">برچسب‌ها</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-circle-o text-danger"></i>
+                <p class="text">مهم</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-circle-o text-warning"></i>
+                <p>هشدار</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-circle-o text-info"></i>
+                <p>اطلاعات</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>خواندن ایمیل</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">خانه</a></li>
+              <li class="breadcrumb-item active">خواندن ایمیل</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="mailbox.html.html" class="btn btn-primary btn-block mb-3">برگشت به اینباکس</a>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">پوشه‌ها</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <ul class="nav nav-pills flex-column">
+                  <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-inbox"></i> اینباکس
+                      <span class="badge bg-primary float-left">12</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-envelope-o"></i> ارسال شده
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-file-text-o"></i> پیش نویس
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-filter"></i> هرزنامه
+                      <span class="badge bg-warning float-left">65</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-trash-o"></i> سطل زباله
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /. box -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">برچشب‌ها</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <ul class="nav nav-pills flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-circle-o text-danger"></i>
+                      مهم
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-circle-o text-warning"></i> شخصی
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fa fa-circle-o text-primary"></i>
+                      شبکه اجتماعی
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        <div class="col-md-9">
+          <div class="card card-primary card-outline">
+            <div class="card-header">
+              <h3 class="card-title">خواندن ایمیل</h3>
+
+              <div class="card-tools">
+                <a href="#" class="btn btn-tool" data-toggle="tooltip" title="Previous"><i class="fa fa-chevron-right"></i></a>
+                <a href="#" class="btn btn-tool" data-toggle="tooltip" title="Next"><i class="fa fa-chevron-left"></i></a>
+              </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="mailbox-read-info">
+                <h5>عنوان ایمیل در اینجا</h5>
+                <h6>از : info@mratwan.com
+                  <span class="mailbox-read-time float-left">15 دی 1397 ساعت 12:00</span></h6>
+              </div>
+              <!-- /.mailbox-read-info -->
+              <div class="mailbox-controls with-border text-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="حذف">
+                    <i class="fa fa-trash-o"></i></button>
+                  <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="پاسخ">
+                    <i class="fa fa-share"></i></button>
+                  <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="جلو">
+                    <i class="fa fa-reply"></i></button>
+                </div>
+                <!-- /.btn-group -->
+                <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="پرینت">
+                  <i class="fa fa-print"></i></button>
+              </div>
+              <!-- /.mailbox-controls -->
+              <div class="mailbox-read-message">
+                <p>سلام جان,</p>
+
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+
+                <p>با سپاس,<br>جین</p>
+              </div>
+              <!-- /.mailbox-read-message -->
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer bg-white">
+              <ul class="mailbox-attachments clearfix">
+                <li>
+                  <span class="mailbox-attachment-icon"><i class="fa fa-file-pdf-o"></i></span>
+
+                  <div class="mailbox-attachment-info">
+                    <a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i> Sep2014-report.pdf</a>
+                        <span class="mailbox-attachment-size">
+                          1,245 KB
+                          <a href="#" class="btn btn-default btn-sm float-left"><i class="fa fa-cloud-download"></i></a>
+                        </span>
+                  </div>
+                </li>
+                <li>
+                  <span class="mailbox-attachment-icon"><i class="fa fa-file-word-o"></i></span>
+
+                  <div class="mailbox-attachment-info">
+                    <a href="#" class="mailbox-attachment-name"><i class="fa fa-paperclip"></i> App Description.docx</a>
+                        <span class="mailbox-attachment-size">
+                          1,245 KB
+                          <a href="#" class="btn btn-default btn-sm float-left"><i class="fa fa-cloud-download"></i></a>
+                        </span>
+                  </div>
+                </li>
+                <li>
+                  <span class="mailbox-attachment-icon has-img"><img src="../../dist/img/photo1.png" alt="Attachment"></span>
+
+                  <div class="mailbox-attachment-info">
+                    <a href="#" class="mailbox-attachment-name"><i class="fa fa-camera"></i> photo1.png</a>
+                        <span class="mailbox-attachment-size">
+                          2.67 MB
+                          <a href="#" class="btn btn-default btn-sm float-left"><i class="fa fa-cloud-download"></i></a>
+                        </span>
+                  </div>
+                </li>
+                <li>
+                  <span class="mailbox-attachment-icon has-img"><img src="../../dist/img/photo2.png" alt="Attachment"></span>
+
+                  <div class="mailbox-attachment-info">
+                    <a href="#" class="mailbox-attachment-name"><i class="fa fa-camera"></i> photo2.png</a>
+                        <span class="mailbox-attachment-size">
+                          1.9 MB
+                          <a href="#" class="btn btn-default btn-sm float-left"><i class="fa fa-cloud-download"></i></a>
+                        </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- /.card-footer -->
+            <div class="card-footer">
+              <div class="float-left">
+                <button type="button" class="btn btn-default"><i class="fa fa-reply"></i> پاسخ</button>
+                <button type="button" class="btn btn-default"><i class="fa fa-share"></i> جلو</button>
+              </div>
+              <button type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> حذف</button>
+              <button type="button" class="btn btn-default"><i class="fa fa-print"></i> پرینت</button>
+            </div>
+            <!-- /.card-footer -->
+          </div>
+          <!-- /. box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>CopyLeft &copy; 2018 <a href="http://github.com/mratwan/">محمدرضا عطوان</a>.</strong>
+  </footer>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+</body>
+</html>

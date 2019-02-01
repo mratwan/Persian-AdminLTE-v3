@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>پنل مدیریت | داشبورد سوم</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- bootstrap rtl -->
+  <link rel="stylesheet" href="dist/css/bootstrap-rtl.min.css">
+  <!-- template rtl version -->
+  <link rel="stylesheet" href="dist/css/custom-style.css">
+
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to to the body tag
+to get the desired effect
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">خانه</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">تماس</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="جستجو" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav mr-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-comments-o"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 ml-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  محمدرضا عطوان
+                  <span class="float-left text-sm text-danger"><i class="fa fa-star"></i></span>
+                </h3>
+                <p class="text-sm">با من تماس بگیر لطفا...</p>
+                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 ساعت قبل</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  پیمان احمدی
+                  <span class="float-left text-sm text-muted"><i class="fa fa-star"></i></span>
+                </h3>
+                <p class="text-sm">من پیامتو دریافت کردم</p>
+                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 ساعت قبل</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  سارا وکیلی
+                  <span class="float-left text-sm text-warning"><i class="fa fa-star"></i></span>
+                </h3>
+                <p class="text-sm">پروژه اتون عالی بود مرسی واقعا</p>
+                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i>4 ساعت قبل</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">مشاهده همه پیام‌ها</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-bell-o"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+          <span class="dropdown-item dropdown-header">15 نوتیفیکیشن</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fa fa-envelope ml-2"></i> 4 پیام جدید
+            <span class="float-left text-muted text-sm">3 دقیقه</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fa fa-users ml-2"></i> 8 درخواست دوستی
+            <span class="float-left text-muted text-sm">12 ساعت</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fa fa-file ml-2"></i> 3 گزارش جدید
+            <span class="float-left text-muted text-sm">2 روز</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">مشاهده همه نوتیفیکیشن</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+                class="fa fa-th-large"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">پنل مدیریت</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div>
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="https://secure.gravatar.com/avatar/5ffa2a1ffeb767c60ab7e1052e385d5c?s=128&d=mm&r=g 2x" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">محمدرضا عطوان</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fa fa-dashboard"></i>
+                <p>
+                  داشبوردها
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>داشبورد اول</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index2.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>داشبورد دوم</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index3.html" class="nav-link active">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>داشبورد سوم</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="pages/widgets.html" class="nav-link">
+                <i class="nav-icon fa fa-th"></i>
+                <p>
+                  ویجت‌ها
+                  <span class="right badge badge-danger">جدید</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-pie-chart"></i>
+                <p>
+                  چارت‌ها
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/charts/chartjs.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>نمودار ChartJS</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/charts/flot.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>نمودار Flot</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/charts/inline.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>نمودار Inline</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-tree"></i>
+                <p>
+                  اشیای گرافیکی
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/UI/general.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>عمومی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/icons.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>آیکون‌ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/buttons.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>دکمه‌ها</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/sliders.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>اسلایدر‌ها</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-edit"></i>
+                <p>
+                  فرم‌ها
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/general.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>اجزا عمومی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/forms/advanced.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>پیشرفته</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/forms/editors.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>ویشرایشگر</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-table"></i>
+                <p>
+                  جداول
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/tables/simple.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>جداول ساده</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/tables/data.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>جداول داده</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">مثال‌ها</li>
+            <li class="nav-item">
+              <a href="pages/calendar.html" class="nav-link">
+                <i class="nav-icon fa fa-calendar"></i>
+                <p>
+                  تقویم
+                  <span class="badge badge-info right">2</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-envelope-o"></i>
+                <p>
+                  ایمیل‌ باکس
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/mailbox/mailbox.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>اینباکس</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/mailbox/compose.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>ایجاد</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/mailbox/read-mail.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>خواندن</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-book"></i>
+                <p>
+                  صفحات
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/examples/invoice.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>سفارشات</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/profile.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>پروفایل</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/login.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>صفحه ورود</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/register.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>صفحه عضویت</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/lockscreen.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>قفل صفحه</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-plus-square-o"></i>
+                <p>
+                  بیشتر
+                  <i class="fa fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/examples/404.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>ارور 404</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/500.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>ارور 500</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/blank.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>صفحه خالی</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="starter.html" class="nav-link">
+                    <i class="fa fa-circle-o nav-icon"></i>
+                    <p>صفحه شروع</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">متفاوت</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-file"></i>
+                <p>مستندات</p>
+              </a>
+            </li>
+            <li class="nav-header">برچسب‌ها</li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-circle-o text-danger"></i>
+                <p class="text">مهم</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-circle-o text-warning"></i>
+                <p>هشدار</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-circle-o text-info"></i>
+                <p>اطلاعات</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">داشبورد سوم</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-left">
+              <li class="breadcrumb-item"><a href="#">خانه</a></li>
+              <li class="breadcrumb-item active">داشبورد سوم</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header no-border">
+                <div class="d-flex justify-content-between">
+                  <h3 class="card-title">کاربران آنلاین</h3>
+                  <a href="javascript:void(0);">مشاهده گزارش</a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="d-flex flex-column">
+                    <span class="text-bold text-lg">820</span>
+                    <span>بازدید کننده در طول زمان</span>
+                  </p>
+                  <p class="mr-auto d-flex flex-column text-right">
+                    <span class="text-success">
+                      <i class="fa fa-arrow-up"></i> 12.5%
+                    </span>
+                    <span class="text-muted">از هفته گذشته</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+
+                <div class="position-relative mb-4">
+                  <canvas id="visitors-chart" height="200"></canvas>
+                </div>
+
+                <div class="d-flex flex-row justify-content-end">
+                  <span class="ml-2">
+                    <i class="fa fa-square text-primary"></i> این هفته
+                  </span>
+
+                  <span>
+                    <i class="fa fa-square text-gray"></i> هفته گذشته
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+
+            <div class="card">
+              <div class="card-header no-border">
+                <h3 class="card-title">محصولات</h3>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-sm">
+                    <i class="fa fa-download"></i>
+                  </a>
+                  <a href="#" class="btn btn-tool btn-sm">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <table class="table table-striped table-valign-middle">
+                  <thead>
+                  <tr>
+                    <th>محصولات</th>
+                    <th>قیمت</th>
+                    <th>فروش</th>
+                    <th>بیشتر</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                      تلویزیون هوشمند
+                    </td>
+                    <td>13 تومان</td>
+                    <td>
+                      <small class="text-success mr-1">
+                        <i class="fa fa-arrow-up"></i>
+                        12%
+                      </small>
+                      12,000 فروش
+                    </td>
+                    <td>
+                      <a href="#" class="text-muted">
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                      محصول ایکس
+                    </td>
+                    <td>29 تومان</td>
+                    <td>
+                      <small class="text-warning mr-1">
+                        <i class="fa fa-arrow-down"></i>
+                        0.5%
+                      </small>
+                      123,234 فروش
+                    </td>
+                    <td>
+                      <a href="#" class="text-muted">
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                      محصول پرفروش
+                    </td>
+                    <td>1,230 تومان</td>
+                    <td>
+                      <small class="text-danger mr-1">
+                        <i class="fa fa-arrow-down"></i>
+                        3%
+                      </small>
+                      198 فروش
+                    </td>
+                    <td>
+                      <a href="#" class="text-muted">
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                      محصول جدید
+                      <span class="badge bg-danger">جدید</span>
+                    </td>
+                    <td>199 تومان</td>
+                    <td>
+                      <small class="text-success mr-1">
+                        <i class="fa fa-arrow-up"></i>
+                        63%
+                      </small>
+                      87 فروش
+                    </td>
+                    <td>
+                      <a href="#" class="text-muted">
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header no-border">
+                <div class="d-flex justify-content-between">
+                  <h3 class="card-title">فروش</h3>
+                  <a href="javascript:void(0);">مشاهده گزارش</a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="d-flex flex-column">
+                    <span class="text-bold text-lg">تومان 18,230.00</span>
+                    <span>فروش در طول زمان</span>
+                  </p>
+                  <p class="mr-auto d-flex flex-column text-right">
+                    <span class="text-success">
+                      <i class="fa fa-arrow-up"></i> 33.1%
+                    </span>
+                    <span class="text-muted">از ماه گذشته</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+
+                <div class="position-relative mb-4">
+                  <canvas id="sales-chart" height="200"></canvas>
+                </div>
+
+                <div class="d-flex flex-row justify-content-end">
+                  <span class="ml-2">
+                    <i class="fa fa-square text-primary"></i> امسال
+                  </span>
+
+                  <span>
+                    <i class="fa fa-square text-gray"></i> سال گذشته
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+
+            <div class="card">
+              <div class="card-header no-border">
+                <h3 class="card-title">بررسی اجمالی فروشگاه آنلاین</h3>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-sm btn-tool">
+                    <i class="fa fa-download"></i>
+                  </a>
+                  <a href="#" class="btn btn-sm btn-tool">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                  <p class="text-success text-xl">
+                    <i class="ion ion-ios-refresh-empty"></i>
+                  </p>
+                  <p class="d-flex flex-column text-right">
+                    <span class="font-weight-bold">
+                      <i class="ion ion-android-arrow-up text-success"></i> 12%
+                    </span>
+                    <span class="text-muted">نرخ تبدیل</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                  <p class="text-warning text-xl">
+                    <i class="ion ion-ios-cart-outline"></i>
+                  </p>
+                  <p class="d-flex flex-column text-right">
+                    <span class="font-weight-bold">
+                      <i class="ion ion-android-arrow-up text-warning"></i> 0.8%
+                    </span>
+                    <span class="text-muted">نرخ فروش</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+                <div class="d-flex justify-content-between align-items-center mb-0">
+                  <p class="text-danger text-xl">
+                    <i class="ion ion-ios-people-outline"></i>
+                  </p>
+                  <p class="d-flex flex-column text-right">
+                    <span class="font-weight-bold">
+                      <i class="ion ion-android-arrow-down text-danger"></i> 1%
+                    </span>
+                    <span class="text-muted">نرخ ثبت نام</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-block-down">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>CopyLeft &copy; 2018 <a href="http://github.com/mratwan/">محمدرضا عطوان</a>.</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="dist/js/demo.js"></script>
+<script src="dist/js/pages/dashboard3.js"></script>
+</body>
+</html>
